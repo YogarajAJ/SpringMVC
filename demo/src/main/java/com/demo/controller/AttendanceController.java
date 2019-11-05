@@ -57,7 +57,7 @@ public class AttendanceController {
 	}
 
 	@PostMapping("/gotoHome")
-	public String homePage(@ModelAttribute("checkinModel")CheckIn checkIn, Model model) throws Exception {
+	public String homePage(@ModelAttribute("checkoutModel")CheckIn checkIn, Model model) throws Exception {
 		service.saveCheckOutData(checkIn.getId());
 		model.addAttribute("checkinModel", new CheckIn());
 		return "Check-in";
