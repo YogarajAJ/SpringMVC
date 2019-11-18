@@ -12,12 +12,13 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
+	
 <title>Registration</title>
 </head>
 <body>
 	<div class="container">
 		<h4>Register</h4>
-		<form:form modelAttribute="customer">
+		<form:form modelAttribute="customer" action="/registerProcess">
 
 			<table>
 				<tbody>
@@ -50,7 +51,7 @@
 						<td>
 							<div>
 								<form:input cssClass="form-control" placeholder="Email ID"
-									path="email_id" />
+									path="email" />
 							</div>
 						</td>
 
